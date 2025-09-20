@@ -2,12 +2,15 @@ import os
 import sys
 import random
 
+
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
+
 
 def reset_game():
     CELLS = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
     return CELLS
+
 
 def draw_map(CELLS):
     print("", " | ".join(CELLS[0:3]))
@@ -109,6 +112,7 @@ def single_player():
 
     play_again()
 
+
 def multi_player():
     CELLS = reset_game()
     moves = []
@@ -179,3 +183,4 @@ Multi Player  : 2
 
 clear()
 game_loop()
+
